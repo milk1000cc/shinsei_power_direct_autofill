@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 1.4rem;
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+}
+
+header, section {
+    margin-bottom: 25px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 2.0rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+dt {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+    width: 200px;
+}
+
+dd {
+    display: inline-block;
+    margin: 0;
+}
+
+input[type="text"], input[type="password"] {
+    width: 130px;
+}
+
+.notice {
+    color: #999;
+}
+
+.restoreNotice {
+    color: #999;
+    display: block;
+    font-size: 1.3rem;
+    margin-top: 2px;
+}
+
+#status {
+    color: #999;
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
+}

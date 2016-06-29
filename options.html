@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>オプション - Shinsei Power Direct AutoFill</title>
+    <link href="css/options.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Shinsei Power Direct AutoFill</h1>
+
+      <p class="notice">
+        情報は、暗号化されてコンピュータ内に保存されます。
+      </p>
+    </header>
+
+    <form id="form">
+      <section>
+        <dl>
+          <dt>
+            3 桁の店番号と 7 桁の口座番号を続けて入力 (半角):
+          </dt>
+          <dd>
+            <input type="text" id="accountId" pattern="\d{10}" maxlength="10" required>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>
+            4 桁の暗証番号:
+          </dt>
+          <dd>
+            <input type="password" id="accountPin" pattern="\d{4}" maxlength="4" required>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>
+            パワーダイレクトパスワード:
+          </dt>
+          <dd>
+            <input type="password" id="accountPassword" required>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>セキュリティ・カード</h2>
+
+        <dl>
+          <dt>
+            1 行目 (0 行の A 〜 J):
+          </dt>
+          <dd>
+            <input type="text" name="securityCard" pattern="\w{10}" maxlength="10" required>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>
+            2 行目 (1 行の A 〜 J):
+          </dt>
+          <dd>
+            <input type="text" name="securityCard" pattern="\w{10}" maxlength="10" required>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>
+            3 行目 (2 行の A 〜 J):
+          </dt>
+          <dd>
+            <input type="text" name="securityCard" pattern="\w{10}" maxlength="10" required>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>
+            4 行目 (3 行の A 〜 J):
+          </dt>
+          <dd>
+            <input type="text" name="securityCard" pattern="\w{10}" maxlength="10" required>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>
+            5 行目 (4 行の A 〜 J):
+          </dt>
+          <dd>
+            <input type="text" name="securityCard" pattern="\w{10}" maxlength="10" required>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <dl>
+          <dt>
+            復元用パスワード
+            <span class="restoreNotice">
+              情報を復元するために必要です。このパスワードは保存されません。新生パワーダイレクトログイン時に入力する必要があります。
+            </span>
+          </dt>
+          <dd>
+            <input type="password" id="restorePassword" required>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <input type="submit" value="保存">
+        <p id="status"></p>
+      </section>
+    </form>
+
+    <script src="js/aes.js"></script>
+    <script src="js/options.js"></script>
+  </body>
+</html>

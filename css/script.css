@@ -1,0 +1,73 @@
+.spdaf-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.spdaf-box, .spdaf-box * {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.spdaf-box {
+    background: #fff;
+    border-radius: 3px;
+    height: 117px;
+    left: 50%;
+    margin-left: -147px;
+    margin-top: -59px;
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    width: 294px;
+}
+
+.spdaf-box--invalid {
+    height: 145px;
+    margin-top: -73px;
+}
+
+.spdaf-box--no-setting {
+    height: 100px;
+    margin-top: -50px;
+}
+
+.spdaf-box__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.spdaf-box__text {
+    margin: 0;
+}
+
+.spdaf-box__text--form {
+    margin-bottom: 10px;
+}
+
+.spdaf-box__input {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    width: 200px;
+}
+
+.spdaf-box__button {
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    height: 28px;
+    margin-left: 10px;
+    vertical-align: top;
+    width: 50px;
+}
+
+.spdaf-box__invalid {
+    color: #f33;
+    display: none;
+    font-size: 14px;
+    margin: 10px 0 0;
+}

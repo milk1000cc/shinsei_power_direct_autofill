@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Shinsei Power Direct AutoFill",
+    "version": "0.2.0",
+
+    "description": "新生パワーダイレクトに自動でログインします。",
+
+    "content_scripts": [
+        {
+            "matches": ["https://*.shinseibank.com/FLEXCUBEAt/LiveConnect.dll*"],
+            "css": ["css/script.css"],
+            "js": ["js/aes.js", "js/script.js"]
+        }
+    ],
+
+    "options_page": "options.html",
+
+    "permissions": [
+        "storage"
+    ]
+}
