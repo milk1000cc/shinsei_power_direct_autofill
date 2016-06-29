@@ -1,0 +1,2 @@
+# shinsei_power_direct_autofill
+新生パワーダイレクトに自動でログインする Chrome 拡張
