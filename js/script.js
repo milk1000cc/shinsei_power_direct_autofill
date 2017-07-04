@@ -24,7 +24,7 @@ const TEMPLATE = {
 };
 
 function main() {
-  if (document.title !== 'ログインスクリーン') {
+  if (!isLoginScreen()) {
     return;
   }
 
@@ -35,6 +35,11 @@ function main() {
       showNoSettingDialog();
     }
   });
+}
+
+function isLoginScreen() {
+  return (document.title === 'ログインスクリーン') ||
+    (document.title.toLowerCase() === 'login screen');
 }
 
 function login(data) {
