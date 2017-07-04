@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Shinsei Power Direct AutoFill",
-    "version": "0.2.0",
+    "version": "0.3.0",
 
     "description": "新生パワーダイレクトに自動でログインします。",
 
